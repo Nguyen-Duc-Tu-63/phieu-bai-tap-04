@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusMart — CSS (Buoi 3)</title>
+    <title>CampusMart — Layout (Buoi 4)</title>
 
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -34,7 +34,31 @@
 
         <section id="products">
             <h2>Danh sach san pham</h2>
-            <table class="cm-table" data-testid="cm-product-table">
+            <div class="cm-grid" data-testid="cm-product-table">
+                <article class="cm-card" data-sku="KB-01">
+                    <figure>
+                        <img src="https://placehold.co/50x50?text=K2" alt="Ban phim Keychron K2" width="120" height="80">
+                        <figcaption>KB-01</figcaption>
+                    </figure>
+                    <h3 class="cm-card-title">Keychron K2</h3>
+                    <p class="cm-card-category">Ban phim</p>
+                    <p class="cm-card-price">1 890 000</p>
+                </article>
+
+                <article class="cm-card" data-sku="KB-02">
+                    <figure>
+                        <img src="https://placehold.co/220x140?text=Akko" alt="Ban phim Akko 3087" width="120" height="80">
+                        <figcaption>KB-02</figcaption>
+                    </figure>
+                    <h3 class="cm-card-title">Akko 3087</h3>
+                    <p class="cm-card-category">Ban phim</p>
+                    <p class="cm-card-price"> 1 290 000</p>
+                </article>
+            </div>
+
+
+            
+            <!-- <table class="cm-table" data-testid="cm-product-table">
                 <caption>Danh sach san pham CORE</caption>
                 <thead>
                     <tr>
@@ -71,7 +95,7 @@
                         <td>1290000</td>
                         <td>5</td>
                     </tr>
-
+                    
                      <tr data-testid="cm-product-row" data-sku="MS-01">
                         <td>MS-01</td>
                         <td>
@@ -144,8 +168,8 @@
                         <td>1</td>
                     </tr>
                 </tbody>
-            </table>
-
+            </table>  -->
+            
             <div data-testid="cm-inventory-total">
                 <p>Tong gia tri kho = 41380000</p>
                 <p>So san pham = 8</p>
