@@ -13,27 +13,7 @@ body{
     background: var(--cm-bg);
     color: #1f2937;
 }
-.cm-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-}
 
-.cm-nav ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.cm-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 1rem;
-}
 
 .cm-table{
     width: 100%;
@@ -100,6 +80,32 @@ button[type = "submit"]{
 }
 button[type="submit"]:hover{
     background-color: #0c5e58;
+}
+
+
+
+/*Buoi so 4 */
+
+.cm-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cm-nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.cm-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
 }
 
 .cm-card{
